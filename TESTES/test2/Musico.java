@@ -1,3 +1,4 @@
+package test2;
 public class Musico {
 
     //cria atributos

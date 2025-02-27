@@ -1,0 +1,11 @@
+Você foi contratada para criar um sistema de gerenciamento
+ de uma locadora de midias,
+você deve permitir a criação de midias, as listagens, 
+remoção e atualização de cada uma:
+ °Cada midia tem: tipo de midia (filme, serie e jogo),
+  nome da midia, nota da critica(double) e ano de lançamento
+ °O sistema deve permitir pesquisa por tipo, nome, e ano.
+ °O sistema pode atualizar a nota da critica com base 
+ no nome do filme.
+ °Remover midias que sairam de estoque.
+ °Listar todas as midias
