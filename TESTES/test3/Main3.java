@@ -1,12 +1,11 @@
-
+package test3;
 import java.util.Scanner;
 
-public class Main {
-    public static void main(String args[]){
+public class Main3 {
+   public static void main(String args[]){
 
         Scanner sc = new Scanner(System.in);
         int op;
-
         Gerenciador gerenciador = new Gerenciador();
 
         do { 
@@ -50,12 +49,34 @@ public class Main {
                     break;
 
                 case 5: 
-                    sc.nextLine();
-                    tipo = sc.nextLine();
-                    nome = sc.nextLine();
-                    ano = sc.nextInt();
-                    gerenciador.buscar(tipo, nome, ano);
-                    break;
+                System.out.println("Buscar por:");
+                System.out.println("1 - Ano");
+                System.out.println("2 - Nome");
+                System.out.println("3 - Tipo");
+                int buscaOp = sc.nextInt();
+                sc.nextLine(); // Consumir a nova linha
+
+                switch (buscaOp) {
+                    case 1:
+                        System.out.println("Digite o ano:");
+                        ano = sc.nextInt();
+                        gerenciador.buscarPorAno(ano);
+                        break;
+                    case 2:
+                        System.out.println("Digite o nome:");
+                        nome = sc.nextLine();
+                        gerenciador.buscarPorNome(nome);
+                        break;
+                    case 3:
+                        System.out.println("Digite o tipo:");
+                        tipo = sc.nextLine();
+                        gerenciador.buscarPorTipo(tipo);
+                        break;
+                    default:
+                        System.out.println("Opção inválida");
+                        break;
+                }
+                break;
             }
         } while (op != 0);
         sc.close();
