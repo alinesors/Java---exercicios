@@ -58,10 +58,13 @@ public class Main {
                 break;
 
                 case 5:
+                System.out.println("digite o index");
+                sc.nextLine();
+                index = sc.nextInt();
                 System.out.println("digite a qqtd de show");
                 sc.nextLine();
                 quantidadeShow = sc.nextInt();
-                gm.atualizar(quantidadeShow);
+                gm.atualizar(index, quantidadeShow);
                 break;
 
                 case 0:

@@ -21,7 +21,7 @@ public class GerenciadorMusicos {
             System.out.println(m.nome);
             System.out.println(m.instrumento);
             System.out.println(m.nivel);
-            System.out.println(m.instrumento);
+            System.out.println(m.quantidadeShow);
         }
     }
 
@@ -30,10 +30,10 @@ public class GerenciadorMusicos {
         System.out.println("Removido");
     }
 
-    public void atualizar(int quantidadeShow){
-        Musico m = array.get(quantidadeShow);
+    public void atualizar(int index, int quantidadeShow){
+        Musico m = array.get(index);
         m.quantidadeShow = quantidadeShow;
-        array.set(quantidadeShow, m);
+        array.set(index, m);
         System.out.println("Atualizado");
 
     }
@@ -43,7 +43,7 @@ public class GerenciadorMusicos {
             if(m.instrumento.equals(instrumento)){
                 System.out.println(m.nome);
                 System.out.println("Encontrado");
-                encontrou = true;   
+                encontrou = true;   //////eu amo meu amorzinhoooooooooooooooooooooooooooooooooooooooo
             } 
         }
         if(!encontrou){
