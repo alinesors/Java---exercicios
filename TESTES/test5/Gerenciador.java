@@ -54,8 +54,8 @@ public class Gerenciador {
         }
     }
 
-    public void atualizar(String status, string titulo){
-        Livro l = array.get(titulo);
+    public void atualizar(String status, int index){
+        Livro l = array.get(index);
         l.status = status;
         array.set(index, l);
         System.out.println("Status foi atualizado!");
